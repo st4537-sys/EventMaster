@@ -7,9 +7,18 @@ const eventSchema = new mongoose.Schema(
       required: true,
       trim: true
     },
+    description: {
+      type: String,
+      default: ''
+    },
     date: {
       type: Date,
       required: true
+    },
+    location: {
+      type: String,
+      required: true,
+      trim: true
     },
     capacity: {
       type: Number,
@@ -23,6 +32,11 @@ const eventSchema = new mongoose.Schema(
     availableSeats: {
       type: Number,
       required: true
+    },
+    status: {
+      type: String,
+      enum: ['active', 'cancelled'],
+      default: 'active'
     }
   },
   {

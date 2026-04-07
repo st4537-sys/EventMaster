@@ -74,26 +74,27 @@ src/
 └── index.js
 
 
----
 
 ##  Installation Guide
 
-### 1. Clone repository
+1. Clone repository
 ```bash
 git clone https://github.com/your-username/eventmaster.git
 cd eventmaster
+
 2. Install dependencies
 npm install
 3. Create .env file
 PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+
 4. Run server
 node index.js
-
 Server will run on:
-
 http://localhost:3000
+
+
 🧪 API Testing
 Swagger UI
 http://localhost:3000/api-docs
@@ -101,7 +102,11 @@ How to authorize:
 Click Authorize
 Paste your token:
 Bearer YOUR_TOKEN
+
+
 📡 Main Endpoints
+
+
 👤 Users
 Register user
 POST /users/register
@@ -159,8 +164,6 @@ JWT (jsonwebtoken)
 bcryptjs
 Swagger (swagger-jsdoc + swagger-ui-express)
 
-
-👨‍💻 Author
 
 Developed by:
 

@@ -35,11 +35,11 @@ The API implements authentication using JWT and role-based access control (admin
   - `user`
   - `admin`
 
----
+
 
 ##  Project Structure (N-Layers Architecture)
 
-
+---
 src/
 │
 ├── config/
@@ -72,7 +72,7 @@ src/
 │
 ├── app.js
 └── index.js
-
+---
 
 
 ##  Installation Guide

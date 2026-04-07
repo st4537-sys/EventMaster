@@ -3,7 +3,8 @@ const router = express.Router();
 const {
   getGenericToken,
   registerUser,
-  loginUser
+  loginUser,
+  getUserProfile
 } = require('../controllers/userController');
 
 const authMiddleware = require('../middlewares/authMiddleware');
@@ -56,7 +57,7 @@ router.post('/login', loginUser);
  *       200:
  *         description: Access granted
  */
-router.get('/profile', authMiddleware, (req, res) => {
+router.get('/profile', authMiddleware, getUserProfile, (req, res) => {
   res.json({
     message: 'Access granted',
     user: req.user

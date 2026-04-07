@@ -66,8 +66,22 @@ const loginAdmin = async (req, res) => {
     res.status(500).json({ message: 'Internal Server Error' });
   }
 };
+const getAdminProfile = async (req, res) => {
+  try {
+    const admin = await Admin.findById(req.user.id).select('name email role');
+
+    if (!admin) {
+      return res.status(404).json({ message: 'Admin not found' });
+    }
+
+    res.json(admin);
+  } catch (error) {
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+};
 
 module.exports = {
   registerAdmin,
-  loginAdmin
+  loginAdmin,
+  getAdminProfile
 };

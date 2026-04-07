@@ -3,8 +3,11 @@ const router = express.Router();
 
 const {
   registerAdmin,
-  loginAdmin
+  loginAdmin,
+  getAdminProfile
 } = require('../controllers/adminController');
+
+const authMiddleware = require('../middlewares/authMiddleware');
 
 /**
  * @swagger
@@ -29,5 +32,19 @@ router.post('/register', registerAdmin);
  *         description: Login successful
  */
 router.post('/login', loginAdmin);
+
+/**
+ * @swagger
+ * /admin/profile:
+ *   get:
+ *     summary: Get authenticated admin profile
+ *     tags: [Admin]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Access granted
+ */
+router.get('/profile', authMiddleware, getAdminProfile);
 
 module.exports = router;

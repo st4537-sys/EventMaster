@@ -107,6 +107,8 @@ Register user
 POST /users/register
 Login user
 POST /users/login
+
+
 🎫 Reservations
 Create reservation
 POST /users/reservations/create-reservation
@@ -114,9 +116,13 @@ Get my reservations
 GET /users/reservations/my-reservations
 Cancel reservation
 DELETE /users/reservations/cancel-reservation/:id
+
+
 📅 Events
 Get all events (public)
 GET /events
+
+
 🛠️ Admin
 Register admin
 POST /admin/register
@@ -130,14 +136,20 @@ Update event
 PUT /admin/events/update-event/:id
 Delete event
 DELETE /admin/events/delete-event/:id
+
+
 🔒 Security
 Password encryption using bcrypt
 JWT authentication
 Protected routes with middleware
 Role validation (admin/user)
+
+
 🗄️ Database
 MongoDB Atlas
 Mongoose ODM
+
+
 🧰 Technologies Used
 Node.js
 Express.js
@@ -146,6 +158,8 @@ Mongoose
 JWT (jsonwebtoken)
 bcryptjs
 Swagger (swagger-jsdoc + swagger-ui-express)
+
+
 👨‍💻 Author
 
 Developed by:

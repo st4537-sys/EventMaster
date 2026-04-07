@@ -39,40 +39,40 @@ The API implements authentication using JWT and role-based access control (admin
 
 ##  Project Structure (N-Layers Architecture)
 
----
+
+```
 src/
-│
 ├── config/
-│ ├── db.js
-│ └── swagger.js
+│   ├── db.js
+│   └── swagger.js
 │
 ├── controllers/
-│ ├── adminController.js
-│ ├── eventController.js
-│ ├── reservationController.js
-│ └── userController.js
+│   ├── adminController.js
+│   ├── eventController.js
+│   ├── reservationController.js
+│   └── userController.js
 │
 ├── middlewares/
-│ ├── authMiddleware.js
-│ ├── roleMiddleware.js
-│ └── loggerMiddleware.js
+│   ├── authMiddleware.js
+│   ├── roleMiddleware.js
+│   └── loggerMiddleware.js
 │
 ├── models/
-│ ├── Admin.js
-│ ├── Event.js
-│ ├── Reservation.js
-│ └── User.js
+│   ├── Admin.js
+│   ├── Event.js
+│   ├── Reservation.js
+│   └── User.js
 │
 ├── routes/
-│ ├── adminRoutes.js
-│ ├── adminEventRoutes.js
-│ ├── publicEventRoutes.js
-│ ├── reservationRoutes.js
-│ └── userRoutes.js
+│   ├── adminRoutes.js
+│   ├── adminEventRoutes.js
+│   ├── publicEventRoutes.js
+│   ├── reservationRoutes.js
+│   └── userRoutes.js
 │
 ├── app.js
 └── index.js
----
+```
 
 
 ##  Installation Guide

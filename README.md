@@ -165,7 +165,46 @@ bcryptjs
 Swagger (swagger-jsdoc + swagger-ui-express)
 
 
+The project uses Git branches and Pull Requests to organize development and maintain the stability of the main branch.
+
+Branches
+main → Stable version of the project.
+develop → Integration branch for development.
+feature/* → Used to develop new features.
+fix/* → Used to fix bugs.
+docs/* → Used for documentation changes.
+Development Workflow
+Create a new branch from main or develop.
+git checkout -b feature/name-of-feature
+Make the required changes to the project.
+Check the changes:
+git status
+Add and commit the changes:
+git add .
+git commit -m "feat: add new feature"
+Push the branch to GitHub:
+git push -u origin feature/name-of-feature
+Create a Pull Request on GitHub.
+The Pull Request must be reviewed before merging into the target branch.
+After approval, the Pull Request can be merged.
+Pull Request Rules
+Pull Requests must have a clear title and description.
+Changes should be tested before creating a Pull Request.
+Do not commit passwords, API keys, or .env files.
+Keep commits clear and descriptive.
+Avoid pushing directly to main when working on new features or fixes.
+Reviewers should verify the changes before approving the Pull Request.
+Commit Convention
+
+The project uses descriptive commit messages:
+
+feat: add event reservation
+fix: correct authentication middleware
+docs: update README
+refactor: improve event controller
+
+
 Developed by:
 
-Leslie Esthela Martinez Rodriguez
+Juan Carlos Alba Zermeño 3992
 

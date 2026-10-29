@@ -205,6 +205,6 @@ refactor: improve event controller
 
 
 Developed by:
-
+Leslie Esthela Martinez Rodriguez 4537
 Juan Carlos Alba Zermeño 3992
 
